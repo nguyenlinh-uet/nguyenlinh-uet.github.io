@@ -1,0 +1,43 @@
+/* !RESETS AND DEFAULTS */
+/* ========================================================================= */
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, img, ins, kbd, q, samp, var, hr, acronym, dl, dt, dd, ol, ul, li, pre, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { border: 0; outline: 0; font-style: normal; font-weight: 400; font-size: 100%; vertical-align: baseline; margin: 0; padding: 0; -webkit-text-size-adjust: 100%; }
+
+html, body { height: 100%; margin: 0; padding: 0; font: 400 16px/1.5 Helvetica, Arial, sans-serif; background: #ffffff; color: #333; }
+
+@-webkit-keyframes love-move {
+    30% { -ms-transform: rotate(-30deg) scale(1); -webkit-transform: rotate(-30deg) scale(1); transform: rotate(-30deg) scale(1); }
+    40% { -ms-transform: rotate(-30deg) scale(1.2); -webkit-transform: rotate(-30deg) scale(1.2); transform: rotate(-30deg) scale(1.2); }
+    50% { -ms-transform: rotate(-30deg) scale(1); -webkit-transform: rotate(-30deg) scale(1); transform: rotate(-30deg) scale(1); }
+    60% { -ms-transform: rotate(-30deg) scale(1.2); -webkit-transform: rotate(-30deg) scale(1.2); transform: rotate(-30deg) scale(1.2); }
+    70% { -ms-transform: rotate(-30deg) scale(1); -webkit-transform: rotate(-30deg) scale(1); transform: rotate(-30deg) scale(1); }
+}
+
+@keyframes love-move {
+    30% { -ms-transform: rotate(-30deg) scale(1); -webkit-transform: rotate(-30deg) scale(1); transform: rotate(-30deg) scale(1); }
+    40% { -ms-transform: rotate(-30deg) scale(1.2); -webkit-transform: rotate(-30deg) scale(1.2); transform: rotate(-30deg) scale(1.2); }
+    50% { -ms-transform: rotate(-30deg) scale(1); -webkit-transform: rotate(-30deg) scale(1); transform: rotate(-30deg) scale(1); }
+    60% { -ms-transform: rotate(-30deg) scale(1.2); -webkit-transform: rotate(-30deg) scale(1.2); transform: rotate(-30deg) scale(1.2); }
+    70% { -ms-transform: rotate(-30deg) scale(1); -webkit-transform: rotate(-30deg) scale(1); transform: rotate(-30deg) scale(1); }
+}
+
+/* ========================================================================= */
+/* !FRONT PAGE
+/* ========================================================================= */
+#particles-js { position: absolute; width: 100%; height: 100%; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; z-index: 100; }
+#front-page { position: absolute; width: 100%; height: 100%; overflow: hidden; }
+#front-page ul { position: absolute; top: 0; left: 0; }
+#front-page .btn { position: absolute; bottom: 5%; left: calc(50% - 110px); width: 220px; height: 90px; line-height: 90px; z-index: 2; border-radius: 20px; color: #fff; font-size: 40px; text-align: center; border: solid 5px #fff; padding: 0; transition: all 0.3s; animation-name: front-btn; animation-duration: 4s; animation-iteration-count: infinite; }
+#front-page .btn:hover { animation-name: front-btn-hover; }
+#front-page #scene { position: absolute; width: 100%; height: 100%; }
+#front-page #scene .background { position: absolute; left: -10vw; top: -10vh; width: 120vw; height: 120vh; background-image: url("http://www.jksakura.com/myworks/valentine/ui/images/background.png"); background-size: cover; background-position: center center; background-repeat: no-repeat; }
+#front-page #scene .layer img { width: 100%; height: 100%; }
+#front-page #scene .layer { position: absolute; width: 100%; height: 100%; padding: 0; margin: 0; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); -webkit-transform-style: preserve-3d; -moz-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; }
+#front-page .balloon { position: absolute; width: 50vw; max-width: 400px; height: 100vw; max-height: 800px; top: 50%; left: 50%; -ms-transform: translate(-50%,-50%);  -webkit-transform: translate(-50%,-50%);  transform: translate(-50%,-50%); }
+#front-page .love { position: absolute; width: 35vw; max-width: 350px; top: 5%; left: 5%; -ms-transform: rotate(-30deg); -webkit-transform: rotate(-30deg); transform: rotate(-30deg); animation: love-move 1.5s infinite; }
+#front-page .tree { position: absolute; min-width: 100vw; bottom: -10vh; left: 50%; -ms-transform: translate(-50%,0);  -webkit-transform: translate(-50%,0);  transform: translate(-50%,0); }
+#front-page .cloud1 { position: absolute; width: 80vw; max-width: 400px; top: 20%; left: 50%; }
+#front-page .cloud2 { position: absolute; width: 90vw; max-width: 800px; bottom: -5vh; right: 10vw; }
+#front-page .cloud3 { position: absolute; width: 100vw; max-width: 700px; top: -10%; left: 0%; }
+#front-page .cloud4 { position: absolute; width: 30vw; max-width: 250px; bottom: 30%; right: 10%; }
+#front-page .cloud5 { position: absolute; width: 50vw; max-width: 450px; bottom: -5%; right: -5vw; }
+#front-page .cloud6 { position: absolute; width: 50vw; max-width: 400px; bottom: 30%; left: -5vw; }
