@@ -2,7 +2,7 @@ const today = new Date();
 const year = today.getFullYear();
 const month = today.getMonth();
 const day = today.getDay();
-const regex = /([01]\d|2[0123]):([012345]\d):([012345]\d)\t From  (.+?)_(.+?) :/;
+const regex = /([01]\d|2[0123]):([012345]\d):([012345]\d)\sFrom\s(.+?)_(.+?)\sto\s(.+)\s:/;
 const myRe = new RegExp(regex);
 function getResult() {
     var data = $("#content")[0].value;
